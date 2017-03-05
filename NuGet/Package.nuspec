@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NibLocalizers</id>
+    <version>$version$</version>
+    <title>NibLocalizers</title>
+    <authors>Aloïs Deniel</authors>
+    <owners>Aloïs Deniel</owners>
+    <licenseUrl>https://github.com/aloisdeniel/Xam.NibLocalizers/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/aloisdeniel/NibLocalizers/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/aloisdeniel/NibLocalizers/master/Documentation/Logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Localize all your Xamarin.iOS storyboards and xibs automatically with just one line of code!</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>translate ios xamarin i18n internationalization localization l18n</tags>
+  </metadata>
+   <files>
+     <!-- iOS -->
+     <file src="..\Sources\NibLocalizers\bin\Release\NibLocalizers.dll" target="lib\Xamarin.iOS10\NibLocalizers.dll" />
+   </files>
+</package>
