@@ -6,7 +6,7 @@ Localize all your Xamarin.iOS storyboards and xibs automatically with just one l
 
 Available on NuGet
 
-[![NuGet](https://img.shields.io/nuget/v/Xam.NibLocalizers.svg?label=NuGet)](https://www.nuget.org/packages/Xam.NibLocalizers/)
+[![NuGet](https://img.shields.io/nuget/v/NibLocalizers.svg?label=NuGet)](https://www.nuget.org/packages/NibLocalizers/)
 
 ## Quickstart
 
