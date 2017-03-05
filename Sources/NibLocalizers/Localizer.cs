@@ -3,6 +3,7 @@
 	using Foundation;
 	using UIKit;
 	using System.Linq;
+	using System.Runtime.CompilerServices;
 
 	public abstract class Localizer : ILocalizer
 	{
@@ -31,6 +32,7 @@
 			}
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UIBarItem bi)
 		{
 			bi.Title = Localize(bi.Title);
@@ -43,6 +45,7 @@
 			}
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UIButton b)
 		{
 			var titles = new[]
@@ -62,17 +65,20 @@
 				b.SetTitle(Localize(titles[3]), UIControlState.Selected);
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UILabel l)
 		{
 			l.Text = Localize(l.Text);
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UINavigationItem item)
 		{
 			item.Title = Localize(item.Title);
 			item.Prompt = Localize(item.Prompt);
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UISearchBar bar)
 		{
 			bar.Placeholder = Localize(bar.Placeholder);
@@ -80,6 +86,7 @@
 			bar.Text = Localize(bar.Text);
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UISegmentedControl segmented)
 		{
 			for (int i = 0; i < segmented.NumberOfSegments; i++)
@@ -89,17 +96,20 @@
 			}
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UITextField field)
 		{
 			field.Text = Localize(field.Text);
 			field.Placeholder = Localize(field.Placeholder);
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UITextView field)
 		{
 			field.Text = Localize(field.Text);
 		}
 
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		private void Localize(UIViewController vc)
 		{
 			vc.Title = Localize(vc.Title);
